@@ -1,4 +1,4 @@
-module https://github.com/GreenieT87/AlertHandler
+module github.com/GreenieT87/AlertHandler
 
 go 1.15
 

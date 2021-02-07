@@ -20,7 +20,7 @@ func NewHandler() *Handler {
 func (h *Handler) SetupRoutes() {
 	fmt.Println("HTTP routs")
 	h.Router = mux.NewRouter()
-	h.Router.Handlefunc("api/health", func(w http.ResponseWriter, r *http.Request) {
+	h.Router.HandleFunc("api/health", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "I am alive")
 	})
 }
